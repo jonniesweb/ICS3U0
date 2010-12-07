@@ -12,7 +12,7 @@
 import java.awt.*;
 import hsa.Console;
 
-public class String_revers {
+public class String_reverse {
 	static Console c; // The output console
 
 	public static void main (String[] args)
