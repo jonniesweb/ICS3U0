@@ -26,12 +26,15 @@ public class a3_q4_simpson_j {
 		int one = 0, two = 0, three = 0, four = 0, five = 0;
 
 		                
-
+		// loop all of this 20 times
 		for (int i = 0; i < 20; i++) {
+			
+			// generate a random number between 1 and 5
 			int randNum = (int) Math.ceil(Math.random() * 5);
 
 			switch (randNum) {
 			case 1:
+				// if 1 is generated print One then increment
 				c.println("One");
 				one++;
 				break;
@@ -53,12 +56,15 @@ public class a3_q4_simpson_j {
 				break;
 
 			default:
+				// error catching / variable spoofing catcher
 				c.println("Impossible output achieved!");
 				break;
 			}
 		}
 		
-		c.println();
+		c.println();// blank
+		
+		// Print the totals of the generated numbers
 		c.println("TOTALS");
 		c.println("One: " + one);
 		c.println("Two: " + two);
