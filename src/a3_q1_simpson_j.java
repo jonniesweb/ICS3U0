@@ -21,7 +21,7 @@ public class a3_q1_simpson_j {
 	static Console c; // The output console
 
 	public static void main(String[] args) {
-		c = new Console();
+		c = new Console(25, 80, 14, "Payroll Calculator");
 
 		// Get user input
 		c.println("This program calculates your payroll.");
