@@ -3,7 +3,9 @@
  * ICS 3U0, Created on 2010-12-04
  * a3_q3_simpson_j.java
  * --------------------------------------------
- * Description TODO: Create a description
+ * A ticket program that asks the user to enter
+ * how many tickets they want to buy and if
+ * they have a coupon.
  * --------------------------------------------
  */
 
@@ -15,14 +17,14 @@ public class a3_q3_simpson_j {
 	static Console c; // The output console
 
 	public static void main(String[] args) {
-		c = new Console();
+		c = new Console(25, 80, 14, "Wootstock Ticket Calculator");
 
 		// Define Variables
 		int vip = 0;
 		
 		
 		
-		c.println("Wootstock ticket calculator");
+		c.println("Wootstock Ticket Calculator");
 		
 		c.print("Please specify how many teen tickets will be bought: ");
 		int teen = c.readInt();
