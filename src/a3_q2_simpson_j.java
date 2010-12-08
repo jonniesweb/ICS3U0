@@ -61,7 +61,7 @@ public class a3_q2_simpson_j {
 	public static void main(String[] args) {
 		
 		// Start the HSA console
-		c = new Console();
+		c = new Console(25, 80, 14, "Inventory Program");
 
 		// Define Variables
 		String pna; // part name
