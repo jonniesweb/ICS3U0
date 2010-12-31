@@ -58,7 +58,7 @@ public class Client extends JFrame {
 		}
 		);
 
-		container.add(enterField, BorderLayout.NORTH);
+		container.add(enterField, BorderLayout.SOUTH);
 
 		//create displayArea
 		displayArea = new JTextArea();
@@ -69,7 +69,7 @@ public class Client extends JFrame {
 	}
 
 	// connect to server and process messages from server
-	private void runClient() {
+	public void runClient() {
 
 		// connect to server, get streams, process connection
 		try {
@@ -186,4 +186,23 @@ public class Client extends JFrame {
 		}
 		);
 	}
+	
+	public static void main(String[] args) {
+
+		Client application;
+
+		if (args.length == 0)
+
+			application = new Client("127.0.0.1");
+
+		else
+			application = new Client(args[0]);
+		
+		application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		application.runClient();
+		
+
+
+	}
 }
+
